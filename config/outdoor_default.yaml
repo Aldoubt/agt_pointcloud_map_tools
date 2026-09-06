@@ -1,0 +1,20 @@
+map_cleaner:
+  voxel_size: 0.10
+
+  outlier_filter:
+    enabled: true
+    radius: 0.30
+    min_neighbors: 8
+
+  cluster_filter:
+    enabled: true
+    tolerance: 0.25
+    min_cluster_size: 20
+    max_cluster_size: 100000
+
+  dynamic_ghost_cleaner:
+    enabled: true
+    description: "Remove sparse dynamic artifacts such as human walking trails"
+
+  debug_export:
+    save_removed_points: true
